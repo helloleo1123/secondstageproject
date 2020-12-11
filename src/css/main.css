@@ -1,3 +1,154 @@
+.main {
+  margin-top: 20px;
+  background-color: #f5f5f5; }
 
+.dotaarea {
+  height: 730px;
+  padding-bottom: 20px; }
+  .dotaarea .title {
+    height: 97px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .dotaarea .title .titleleft {
+      float: left; }
+      .dotaarea .title .titleleft li {
+        width: 240px;
+        height: 40px;
+        line-height: 40px;
+        background-color: yellow; }
+        .dotaarea .title .titleleft li p {
+          float: left;
+          font-size: 18px;
+          font-weight: bold;
+          margin-left: 10px; }
+        .dotaarea .title .titleleft li img {
+          width: 35px;
+          height: 35px;
+          float: left; }
+    .dotaarea .title .titlemid {
+      width: 150px;
+      height: 34px;
+      line-height: 34px;
+      margin-left: 150px; }
+      .dotaarea .title .titlemid li a {
+        width: 110px;
+        height: 29px;
+        color: red;
+        display: block;
+        border-bottom: 2px solid red;
+        font-size: 15px;
+        font-weight: bold; }
+    .dotaarea .title .titleright {
+      height: 97px;
+      line-height: 97px;
+      width: 70px;
+      position: absolute;
+      right: 0; }
+      .dotaarea .title .titleright li a {
+        font-size: 16px;
+        color: #666; }
+      .dotaarea .title .titleright li span {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 5px;
+        background: url(../images/base.png) no-repeat -90px 0;
+        vertical-align: -5px; }
+      .dotaarea .title .titleright li a:hover {
+        color: red; }
+        .dotaarea .title .titleright li a:hover span {
+          background: url(../images/base.png) no-repeat -111px 0; }
+  .dotaarea .goods {
+    width: 100%;
+    background-color: red; }
+    .dotaarea .goods .left {
+      float: left; }
+    .dotaarea .goods .righttop {
+      float: left; }
+      .dotaarea .goods .righttop .rightTL {
+        float: left; }
+      .dotaarea .goods .righttop .rightTR {
+        float: left; }
+
+.csgoarea {
+  height: 730px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .csgoarea .title {
+    width: 100%;
+    height: 97px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    position: relative; }
+    .csgoarea .title .titleleft {
+      float: left; }
+      .csgoarea .title .titleleft li {
+        width: 240px;
+        height: 40px;
+        line-height: 40px;
+        background-color: yellow; }
+        .csgoarea .title .titleleft li p {
+          float: left;
+          font-size: 18px;
+          font-weight: bold;
+          margin-left: 10px; }
+        .csgoarea .title .titleleft li img {
+          width: 35px;
+          height: 35px;
+          float: left; }
+    .csgoarea .title .titleright {
+      height: 97px;
+      line-height: 97px;
+      width: 70px;
+      position: absolute;
+      right: 0; }
+      .csgoarea .title .titleright li a {
+        font-size: 16px;
+        color: #666; }
+      .csgoarea .title .titleright li span {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 5px;
+        background: url(../images/base.png) no-repeat -90px 0;
+        vertical-align: -5px; }
+      .csgoarea .title .titleright li a:hover {
+        color: red; }
+        .csgoarea .title .titleright li a:hover span {
+          background: url(../images/base.png) no-repeat -111px 0; }
+  .csgoarea .goods {
+    width: 100%;
+    background-color: red; }
+    .csgoarea .goods .left {
+      float: left; }
+    .csgoarea .goods .righttop {
+      float: left; }
+    .csgoarea .goods .rightbottom {
+      float: left; }
+
+.heightbig {
+  height: 614px;
+  width: 226px;
+  background-color: aqua;
+  float: left;
+  margin: 10px 10px 10px 0; }
+
+.widthbig {
+  width: 467px;
+  height: 300px;
+  background-color: plum;
+  float: left;
+  margin: 7px; }
+
+.normal {
+  width: 227px;
+  height: 300px;
+  background-color: darkorange;
+  float: left;
+  margin: 7px; }
 
 /*# sourceMappingURL=main.css.map */
