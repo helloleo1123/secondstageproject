@@ -1,0 +1,199 @@
+.head-top{
+    background-color: #474747;
+    height: 33px;
+    line-height: 33px;
+
+    .head-topleft{
+        li{
+        color: #ccc;
+        width: 180px;
+        float: left;
+        }
+    }
+
+    .head-topright{
+        float: right;
+        width:415px;
+        text-align: center;
+        height: 33px;
+        li{
+            float: left;
+            a{
+                color: #ccc;
+            }
+            a:hover{
+                color: white;
+            }
+        }
+
+        .login{
+            width: 80px;
+            height: 33px;
+            margin-right: 20px;
+            float: left;
+    
+            li {
+                width: 38px;
+                position: relative;
+            }
+    
+            .login1::after{
+                content:"|";
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height:11px;
+                width: 1px;
+                color: #ccc;
+            }
+        }
+        .order{
+            width: 150px;
+            height: 33px;
+            margin-right: 20px;
+            float: left; 
+            
+            li{
+                width: 74px;
+                position: relative;
+            }
+            .order1::after{
+                content:"|";
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                height:11px;
+                width: 1px;
+                color: #ccc;
+            }
+        }
+        .shoppingcart{
+            width: 120px;
+            height: 33px;
+            background-color: #1e1e1e;
+            float: left;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            span{
+                display: inline-block;
+                width:20px;    
+                height: 14px;
+                overflow: hidden;
+                background: url(../images/base.png) no-repeat -164px -20px;
+                vertical-align: -2px;
+            }
+            li{ 
+                margin-left:8px;
+                a{
+                    color: #666; 
+                }
+                a:hover{
+                    color: white;
+                }
+            }
+            
+        }
+    }
+}
+
+.head-nav{
+    height: 110px;
+    border-bottom:4px solid #c20315;
+    .allgoods:hover{
+        background-color: red;
+        a{
+            color: white;
+        }
+        span{
+            background: url(../images/base.png) no-repeat -39px 0;
+        }
+    }
+    .wmlogo{
+        width: 180px;
+        height: 110px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #c20315; 
+        img{
+            width: 120px;
+            height: 40px;
+        }
+    }
+    .shop{
+        width: 120px;
+        height: 110px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 55px;
+            height: 27px;
+        }
+    }
+    .allgoods{
+        width: 175px;
+        height: 110px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        cursor: pointer;
+        line-height: 110px;
+        span{
+            display: inline-block;
+            width: 15px;
+            height: 13px;
+            margin-right: 7px;
+            background: url(../images/base.png) no-repeat -24px 0;
+        }
+        a{
+            color: black;
+        }
+        
+    }
+    .links{
+        height: 110px;
+        line-height: 110px;
+        float: left;
+        font-size: 14px;
+        li{
+            float: left;
+            text-align: center; 
+            a:hover{
+                color: red;
+            }
+            a{
+                color: black;
+            }
+        }
+        li:first-child{
+            margin-left: 30px;
+            width: 60px;
+        }
+        li:nth-child(2){
+            width: 120px;
+        }
+        li:nth-child(3){
+            width: 120px;
+        }
+        li:nth-child(4){
+            width: 60px;
+        }
+    }
+    .search{
+        float: left;
+        line-height: 110px;
+        width: 310px;
+        height: 110px;
+        background-color: peru;
+    }
+}
+
+

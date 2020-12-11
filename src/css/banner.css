@@ -1,0 +1,59 @@
+.bannner {
+  position: relative; }
+
+.slide li a {
+  display: block;
+  height: 439px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .slide li a img {
+    position: absolute;
+    left: -190px;
+    top: 0px; }
+
+.arrow .leftarrow {
+  width: 47px;
+  height: 80px;
+  position: relative; }
+  .arrow .leftarrow a span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/base.png);
+    background-position: 0 -20px;
+    position: absolute;
+    top: -260px;
+    left: 170px; }
+  .arrow .leftarrow a span:hover {
+    background-color: #666;
+    opacity: 80%; }
+.arrow .rightarrow {
+  width: 47px;
+  height: 80px;
+  position: relative; }
+  .arrow .rightarrow a span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/base.png);
+    background-position: -47px -20px;
+    position: absolute;
+    top: -340px;
+    left: 1286px; }
+  .arrow .rightarrow a span:hover {
+    background-color: #666;
+    opacity: 80%; }
+
+.bannerlist {
+  width: 1190px;
+  height: 160px;
+  position: absolute;
+  top: 570px;
+  z-index: 120;
+  display: flex;
+  justify-content: center; }
+  .bannerlist a img {
+    margin: 0 8px; }
+
+/*# sourceMappingURL=banner.css.map */

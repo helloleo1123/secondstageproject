@@ -1,0 +1,152 @@
+.head-top {
+  background-color: #474747;
+  height: 33px;
+  line-height: 33px; }
+  .head-top .head-topleft li {
+    color: #ccc;
+    width: 180px;
+    float: left; }
+  .head-top .head-topright {
+    float: right;
+    width: 415px;
+    text-align: center;
+    height: 33px; }
+    .head-top .head-topright li {
+      float: left; }
+      .head-top .head-topright li a {
+        color: #ccc; }
+      .head-top .head-topright li a:hover {
+        color: white; }
+    .head-top .head-topright .login {
+      width: 80px;
+      height: 33px;
+      margin-right: 20px;
+      float: left; }
+      .head-top .head-topright .login li {
+        width: 38px;
+        position: relative; }
+      .head-top .head-topright .login .login1::after {
+        content: "|";
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 11px;
+        width: 1px;
+        color: #ccc; }
+    .head-top .head-topright .order {
+      width: 150px;
+      height: 33px;
+      margin-right: 20px;
+      float: left; }
+      .head-top .head-topright .order li {
+        width: 74px;
+        position: relative; }
+      .head-top .head-topright .order .order1::after {
+        content: "|";
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 11px;
+        width: 1px;
+        color: #ccc; }
+    .head-top .head-topright .shoppingcart {
+      width: 120px;
+      height: 33px;
+      background-color: #1e1e1e;
+      float: left;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      .head-top .head-topright .shoppingcart span {
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        overflow: hidden;
+        background: url(../images/base.png) no-repeat -164px -20px;
+        vertical-align: -2px; }
+      .head-top .head-topright .shoppingcart li {
+        margin-left: 8px; }
+        .head-top .head-topright .shoppingcart li a {
+          color: #666; }
+        .head-top .head-topright .shoppingcart li a:hover {
+          color: white; }
+
+.head-nav {
+  height: 110px;
+  border-bottom: 4px solid #c20315; }
+  .head-nav .allgoods:hover {
+    background-color: red; }
+    .head-nav .allgoods:hover a {
+      color: white; }
+    .head-nav .allgoods:hover span {
+      background: url(../images/base.png) no-repeat -39px 0; }
+  .head-nav .wmlogo {
+    width: 180px;
+    height: 110px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c20315; }
+    .head-nav .wmlogo img {
+      width: 120px;
+      height: 40px; }
+  .head-nav .shop {
+    width: 120px;
+    height: 110px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .head-nav .shop img {
+      width: 55px;
+      height: 27px; }
+  .head-nav .allgoods {
+    width: 175px;
+    height: 110px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 110px; }
+    .head-nav .allgoods span {
+      display: inline-block;
+      width: 15px;
+      height: 13px;
+      margin-right: 7px;
+      background: url(../images/base.png) no-repeat -24px 0; }
+    .head-nav .allgoods a {
+      color: black; }
+  .head-nav .links {
+    height: 110px;
+    line-height: 110px;
+    float: left;
+    font-size: 14px; }
+    .head-nav .links li {
+      float: left;
+      text-align: center; }
+      .head-nav .links li a:hover {
+        color: red; }
+      .head-nav .links li a {
+        color: black; }
+    .head-nav .links li:first-child {
+      margin-left: 30px;
+      width: 60px; }
+    .head-nav .links li:nth-child(2) {
+      width: 120px; }
+    .head-nav .links li:nth-child(3) {
+      width: 120px; }
+    .head-nav .links li:nth-child(4) {
+      width: 60px; }
+  .head-nav .search {
+    float: left;
+    line-height: 110px;
+    width: 310px;
+    height: 110px;
+    background-color: peru; }
+
+/*# sourceMappingURL=head.css.map */
