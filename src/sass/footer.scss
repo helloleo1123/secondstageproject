@@ -1,0 +1,99 @@
+.about{
+    height: 265px;
+    background-color: yellow;
+    .abtitle{
+        height: 80px;
+        border-bottom: 1px solid #e9e9e9;
+        li{
+            margin-top: 15px;
+            margin-bottom: 20px;
+            width: 299px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-right: 1px solid #e9e9e9;
+            float: left;
+           p{
+            float: left;
+            display: inline;
+            font-size: 18px;
+            color: #999;
+           }
+        }
+        li:nth-child(1){
+            span{
+                display: inline-block;
+                background: url(../images/about.png) no-repeat;
+                width: 45px;
+                height: 45px;
+                margin-right: 15px;
+                vertical-align: center;
+                float: left;
+                margin-left:25%;
+            }
+        }
+        li:nth-child(2){
+            span{
+                display: inline-block;
+                background: url(../images/about.png) no-repeat -45px 0;;
+                width: 45px;
+                height: 45px;
+                margin-right: 15px;
+                vertical-align: center;
+                float: left;
+                margin-left:25%;
+            }
+        }
+        li:nth-child(3){
+            span{
+                display: inline-block;
+                background: url(../images/about.png) no-repeat -90px 0;
+                width: 45px;
+                height: 45px;
+                margin-right: 15px;
+                vertical-align: center;
+                float: left;
+                margin-left:25%;
+            }
+        }
+        li:nth-child(4){
+            border-right: 0;
+            span{
+                display: inline-block;
+                background: url(../images/about.png) no-repeat -135px 0;
+                width: 45px;
+                height: 45px;
+                margin-right: 15px;
+                vertical-align: center;
+                float: left;
+                margin-left:25%;
+            }
+        }
+    }
+    .thankslink{
+        height: 160px;
+        background-color: orange;
+        padding-top: 40px;
+        .thkl{
+            float: left;
+            width: 299px;
+            text-align: center;
+            background-color: skyblue;
+            .thktitle{
+                font-size: 14px;
+                height: 35px;
+            }
+            .links{
+                height: 24px;
+                background-color: yellow;
+                a{
+                    color: #999;
+                }
+                a:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+
+}
