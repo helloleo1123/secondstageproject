@@ -77,6 +77,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            position: relative;
             span{
                 display: inline-block;
                 width:20px;    
@@ -85,16 +86,42 @@
                 background: url(../images/base.png) no-repeat -164px -20px;
                 vertical-align: -2px;
             }
-            li{ 
+            .car{ 
                 margin-left:8px;
                 a{
                     color: #666; 
+                    
                 }
                 a:hover{
                     color: white;
                 }
             }
+            .cartlist{
+                height: 106px;
+                width: 350px;
+                background-color: #fafafa;
+                box-shadow: 0 2px 3px #ccc;
+                position: absolute;
+                z-index: 1;
+                top: -74px;
+                right: 0;
+                display: none;
+                p{
+                    padding: 49px 0 37px 0;
+                    text-align: center;
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
             
+        }
+        .shoppingcart:hover{
+            .cartlist{
+                display: block;
+                position: absolute;
+                top: 33px;
+                right: 0;    
+            }
         }
     }
 }
@@ -104,6 +131,9 @@
     border-bottom:4px solid #c20315;
     .allgoods:hover{
         background-color: red;
+        .secondmenu{
+            display: block;
+        }
         a{
             color: white;
         }
@@ -146,6 +176,7 @@
         font-size: 15px;
         cursor: pointer;
         line-height: 110px;
+        position: relative;
         span{
             display: inline-block;
             width: 15px;
@@ -156,8 +187,80 @@
         a{
             color: black;
         }
-        
+        .secondmenu{
+            font-size: 14px;
+            background-color: #fff;
+            box-shadow: 0 2px 3px #ccc;
+            position: absolute;
+            top: 101px;
+            left: 0;
+            z-index: 1;
+            display: none;
+            li{
+                background-color: yellow;
+                position: relative;
+                a{
+                    display: block;
+                    width: 155px;
+                    padding-right: 20px;
+                    height: 40px;
+                    line-height: 40px;
+                    background-color: #FFF;
+                    color: #474747;
+                    position: relative;
+                }
+                span{
+                    position: absolute;
+                    top: 15px;
+                    right: 10px;
+                    width: 6px;
+                    height: 10px;
+                    overflow: hidden;
+                    background: url(../images/base.png) no-repeat -54px 0;
+                }
+                .thirdmenu{
+                    font-size: 14px;
+                    background-color: #fff;
+                    box-shadow: 0 2px 3px #ccc;
+                    position: absolute;
+                    left: 175px;
+                    top: 0;
+                    display: none;
+                    overflow: hidden;
+                    dd{
+                        a{
+                            display: block;
+                            width: 155px;
+                            height: 40px;
+                            line-height: 40px;
+                            background-color: #f5f5f5;
+                            color: #474747;
+                        }
+                        a:hover{
+                            background-color: white;
+                        }
+                    }
+                    
+                }
+            }
+            li:hover{
+                
+                a{
+                    color: red;
+                    background-color: #f5f5f5;
+                }
+                span{
+                    background: url(../images/base.png) no-repeat -60px 0;
+                }
+            }
+        }
+         .secondmenu:hover{ 
+             .thirdmenu{
+                 display: block;
+             }
+         } 
     }
+
     .links{
         height: 110px;
         line-height: 110px;
@@ -188,11 +291,30 @@
         }
     }
     .search{
-        float: left;
-        line-height: 110px;
-        width: 310px;
-        height: 110px;
-        background-color: peru;
+        form{
+        }
+        .text{
+            float: left;
+            width: 263px;
+            height: 39px;
+            line-height: 39px;
+            padding: 0 5px;
+            border: 1px solid #CCC;
+            border-right: 0;
+            margin-top: 35px;
+            position: relative;
+        }
+        .btn{
+            float: left;
+            width: 46px;
+            height: 41px;
+            border: 0;
+            background: #e32332 url(../images/search.png) no-repeat center;
+            cursor: pointer;
+            position: absolute;
+            right: 185px;
+            top: 68px;
+        }
     }
 }
 

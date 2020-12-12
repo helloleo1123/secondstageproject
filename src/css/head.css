@@ -58,7 +58,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative; }
       .head-top .head-topright .shoppingcart span {
         display: inline-block;
         width: 20px;
@@ -66,18 +67,40 @@
         overflow: hidden;
         background: url(../images/base.png) no-repeat -164px -20px;
         vertical-align: -2px; }
-      .head-top .head-topright .shoppingcart li {
+      .head-top .head-topright .shoppingcart .car {
         margin-left: 8px; }
-        .head-top .head-topright .shoppingcart li a {
+        .head-top .head-topright .shoppingcart .car a {
           color: #666; }
-        .head-top .head-topright .shoppingcart li a:hover {
+        .head-top .head-topright .shoppingcart .car a:hover {
           color: white; }
+      .head-top .head-topright .shoppingcart .cartlist {
+        height: 106px;
+        width: 350px;
+        background-color: #fafafa;
+        box-shadow: 0 2px 3px #ccc;
+        position: absolute;
+        z-index: 1;
+        top: -74px;
+        right: 0;
+        display: none; }
+        .head-top .head-topright .shoppingcart .cartlist p {
+          padding: 49px 0 37px 0;
+          text-align: center;
+          font-size: 14px;
+          color: #666; }
+    .head-top .head-topright .shoppingcart:hover .cartlist {
+      display: block;
+      position: absolute;
+      top: 33px;
+      right: 0; }
 
 .head-nav {
   height: 110px;
   border-bottom: 4px solid #c20315; }
   .head-nav .allgoods:hover {
     background-color: red; }
+    .head-nav .allgoods:hover .secondmenu {
+      display: block; }
     .head-nav .allgoods:hover a {
       color: white; }
     .head-nav .allgoods:hover span {
@@ -112,7 +135,8 @@
     align-items: center;
     font-size: 15px;
     cursor: pointer;
-    line-height: 110px; }
+    line-height: 110px;
+    position: relative; }
     .head-nav .allgoods span {
       display: inline-block;
       width: 15px;
@@ -121,6 +145,60 @@
       background: url(../images/base.png) no-repeat -24px 0; }
     .head-nav .allgoods a {
       color: black; }
+    .head-nav .allgoods .secondmenu {
+      font-size: 14px;
+      background-color: #fff;
+      box-shadow: 0 2px 3px #ccc;
+      position: absolute;
+      top: 101px;
+      left: 0;
+      z-index: 1;
+      display: none; }
+      .head-nav .allgoods .secondmenu li {
+        background-color: yellow;
+        position: relative; }
+        .head-nav .allgoods .secondmenu li a {
+          display: block;
+          width: 155px;
+          padding-right: 20px;
+          height: 40px;
+          line-height: 40px;
+          background-color: #FFF;
+          color: #474747;
+          position: relative; }
+        .head-nav .allgoods .secondmenu li span {
+          position: absolute;
+          top: 15px;
+          right: 10px;
+          width: 6px;
+          height: 10px;
+          overflow: hidden;
+          background: url(../images/base.png) no-repeat -54px 0; }
+        .head-nav .allgoods .secondmenu li .thirdmenu {
+          font-size: 14px;
+          background-color: #fff;
+          box-shadow: 0 2px 3px #ccc;
+          position: absolute;
+          left: 175px;
+          top: 0;
+          display: none;
+          overflow: hidden; }
+          .head-nav .allgoods .secondmenu li .thirdmenu dd a {
+            display: block;
+            width: 155px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #f5f5f5;
+            color: #474747; }
+          .head-nav .allgoods .secondmenu li .thirdmenu dd a:hover {
+            background-color: white; }
+      .head-nav .allgoods .secondmenu li:hover a {
+        color: red;
+        background-color: #f5f5f5; }
+      .head-nav .allgoods .secondmenu li:hover span {
+        background: url(../images/base.png) no-repeat -60px 0; }
+    .head-nav .allgoods .secondmenu:hover .thirdmenu {
+      display: block; }
   .head-nav .links {
     height: 110px;
     line-height: 110px;
@@ -142,11 +220,25 @@
       width: 120px; }
     .head-nav .links li:nth-child(4) {
       width: 60px; }
-  .head-nav .search {
+  .head-nav .search .text {
     float: left;
-    line-height: 110px;
-    width: 310px;
-    height: 110px;
-    background-color: peru; }
+    width: 263px;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 5px;
+    border: 1px solid #CCC;
+    border-right: 0;
+    margin-top: 35px;
+    position: relative; }
+  .head-nav .search .btn {
+    float: left;
+    width: 46px;
+    height: 41px;
+    border: 0;
+    background: #e32332 url(../images/search.png) no-repeat center;
+    cursor: pointer;
+    position: absolute;
+    right: 185px;
+    top: 68px; }
 
 /*# sourceMappingURL=head.css.map */
