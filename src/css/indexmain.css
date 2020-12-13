@@ -174,14 +174,22 @@
   width: 226px;
   background-color: aqua;
   float: left;
-  margin: 10px 10px 10px 0; }
+  margin: 10px 10px 10px 0;
+  transition: all 0.2s linear; }
+
+.heightbig:hover {
+  transform: translateY(-2px); }
 
 .widthbig {
   width: 467px;
   height: 300px;
   background-color: plum;
   float: left;
-  margin: 7px; }
+  margin: 7px;
+  transition: all 0.2s linear; }
+
+.widthbig:hover {
+  transform: translateY(-2px); }
 
 .normal {
   width: 227px;
@@ -190,7 +198,11 @@
   float: left;
   margin: 7px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: all 0.2s linear; }
+
+.normal:hover {
+  transform: translateY(-2px); }
 
 .normal:hover .normalshadow {
   opacity: 1;
@@ -227,4 +239,4 @@
     color: #FFF;
     display: block; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=indexmain.css.map */

@@ -237,6 +237,10 @@
     background-color: aqua;
     float: left;
     margin: 10px 10px 10px 0;
+    transition: all 0.2s linear;
+}
+.heightbig:hover{
+    transform: translateY(-2px);
 }
 .widthbig{
     width: 467px;
@@ -244,6 +248,10 @@
     background-color: plum;
     float: left;
     margin: 7px;
+    transition: all 0.2s linear;
+}
+.widthbig:hover{
+    transform: translateY(-2px);
 }
 .normal{
     width: 227px;
@@ -253,7 +261,10 @@
     margin: 7px;
     position: relative;
     overflow: hidden;
-
+    transition: all 0.2s linear;
+}
+.normal:hover{
+    transform: translateY(-2px);
 }
 .normal:hover{
     .normalshadow{
