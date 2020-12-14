@@ -1,16 +1,39 @@
-.bannner {
+.banner {
   position: relative; }
-
-.slide li a {
-  display: block;
-  height: 439px;
-  width: 100%;
-  position: relative;
-  overflow: hidden; }
-  .slide li a img {
-    position: absolute;
-    left: -190px;
-    top: 0px; }
+  .banner .slide {
+    height: 500px;
+    width: auto; }
+    .banner .slide .circle {
+      position: absolute;
+      left: 0;
+      bottom: 30px;
+      width: 100%;
+      z-index: 1;
+      text-align: center; }
+      .banner .slide .circle a {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        border-radius: 6px;
+        margin: 0 5px;
+        overflow: hidden;
+        background-color: #eff0f2; }
+    .banner .slide ul {
+      width: 100000px;
+      left: 0px;
+      position: relative;
+      padding: 0px;
+      margin: 0px;
+      display: block; }
+      .banner .slide ul li {
+        float: left;
+        width: 1519px;
+        height: 439px; }
+        .banner .slide ul li a {
+          display: block;
+          width: 1519px;
+          height: 439px;
+          margin: 0 auto; }
 
 .arrow .leftarrow {
   width: 47px;
@@ -44,21 +67,5 @@
   .arrow .rightarrow a span:hover {
     background-color: #666;
     opacity: 80%; }
-
-.bannerlist {
-  width: 1190px;
-  height: 160px;
-  position: absolute;
-  top: 570px;
-  z-index: 120;
-  display: flex;
-  justify-content: center; }
-  .bannerlist .list {
-    transition: all 0.2s linear; }
-  .bannerlist .list:hover {
-    transform: translateY(-2px);
-    box-shadow: 0px 12px 8px -11px gray; }
-  .bannerlist a img {
-    margin: 0 8px; }
 
 /*# sourceMappingURL=banner.css.map */

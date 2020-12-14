@@ -11,12 +11,13 @@
         position: absolute;
         top: 50%;
         left: 0;
+
         width: 100%;
         margin-top: -140px;
+        transition: all .2s linear;
         .first{
             position: relative;
             padding-bottom: 6px;
-
             a{
                 display: block;
                 color: #FFF;
@@ -42,11 +43,14 @@
                 text-align: left;
                 background: url(../images/base.png) no-repeat -94px -90px;
                 color: #FFF;
-                a{
-                    display: block;
-                    color: #FFF;
-
-                }
+            }
+        }
+        .first:hover{
+            p{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                left: -81px;
             }
         }
         .second{
@@ -58,18 +62,100 @@
                 height: 35px;
                 span{
                     display: inline-block;
-                    width: 18px;
-                    height: 18px;
-                    margin-top: 8px;
-                    background: url(../images/base.png) no-repeat -228px -41.5px;
+                    width: 19px;
+                    height: 15px;
+                    margin-top: 11px;
+                    background: url(../images/base.png) no-repeat -228px -42px;
                 }
             }
-            .first:hover{
-                p{
-                    display: block;
-                    opacity: 1;
-                    position: absolute;
-                    left: -81px;
+            p{
+                display: none;
+                left: -128px;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                width: 71px;
+                padding-left: 15px;
+                height: 37px;
+                line-height: 37px;
+                text-align: left;
+                background: url(../images/base.png) no-repeat -94px -90px;
+                color: #FFF;
+            }
+        }
+        .second:hover{
+            p{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                left: -81px;
+            }
+        }  
+        .third{
+            position: relative;
+            padding-bottom: 6px;
+            a{
+                display: block;
+                color: #FFF;
+                text-align: center;
+                cursor: pointer;
+                span{
+                    display: inline-block;
+                    width: 22px;
+                    margin: 0 auto;
+                    padding: 13px 2px;
+                    font-size: 13px;
+                    border-top: 1px solid #323232;
+                    border-bottom: 1px solid #323232;
+                    i{
+                        display: inline-block;
+                        width: 22px;
+                        height: 18px;
+                        margin-bottom: 7px;
+                        background: url(../images/base.png) no-repeat -184px -56px;
+                    }
+                    font{
+                        display: inline-block;
+                        width: 21px;
+                        height: 21px;
+                        margin-top: 8px;
+                        line-height: 21px;
+                        font-size: 11px;
+                        text-align: center;
+                        background-color: #df2f3a;
+                        border-radius: 11px;
+                    }
+                }
+            }
+            a:hover{ 
+                span{
+                    border-top:1px solid #df2f3a;
+                    border-bottom: 1px solid #df2f3a;
+                    i{
+                        background: url(../images/base.png) no-repeat -184px -38px;
+                    } 
+                    
+                    font{
+                        background-color: black;
+                    }
+                }
+               background-color: #df2f3a; 
+            }
+        }
+        .fouth{
+            position: relative;
+            padding-bottom: 6px;
+            display: block;
+            a{
+                display: block;
+                color: #FFF;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    width: 18px;
+                    height: 16px;
+                    margin-top: 10px;
+                    background: url(../images/base.png) no-repeat -228px -57px;
                 }
             }
             p{
@@ -86,20 +172,52 @@
                 background: url(../images/base.png) no-repeat -94px -90px;
                 color: #FFF;
                 a{
-                    display: block;
-                    color: #FFF;
-
+                    margin-right: 15px;
                 }
             }
         }
-        
+        .fouth:hover{
+            p{
+                display: block;
+                opacity: 1;
+                position: absolute;
+                left: -81px;
+            }
+        }  
+        .gotop{
+            position: absolute;
+            bottom:-180px;
+            left: 0;
+            width: 35px;
+            height: 35px;
+            a{
+                display: block;
+                color: #FFF;
+            }
+            span{
+                display: inline-block;
+                width: 24px;
+                height: 22px;
+                margin-top: 6px;
+                background: url(../images/base.png) no-repeat -228px -20px;
+            }
+        }
     }
 }
 .head-top{
-    background-color: #474747;
     height: 33px;
-    line-height: 33px;   
+    background-color: #474747;
+    color: #CCC;
+    line-height: 33px;
+    text-align: left;
+    ::before{
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
     .head-topleft{
+        float: left;
         li{
         color: #ccc;
         width: 180px;

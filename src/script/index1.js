@@ -8,14 +8,14 @@
         let $strhtml = '';
         $.each(data, function(index, value) {
             $strhtml += `
-            <div class="normal">
+            <div>
                 <a href="detail.html?sid=${value.sid}">
                     <img src="${value.url}" alt="">
                 </a>
-                <p class="goodsname">
+                <p>
                     ${value.title}
                 </p>
-                <p class="goodsprice">
+                <p>
                     ￥${value.price}
                 </p>
             </div>
