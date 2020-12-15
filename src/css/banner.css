@@ -1,55 +1,74 @@
-.banner .slide {
-  position: relative;
-  width: 1519px;
-  margin: 0 auto;
-  overflow: hidden;
-  width: auto; }
-  .banner .slide .circle {
-    position: absolute;
-    left: 50%;
-    bottom: 0; }
-    .banner .slide .circle ol li {
-      float: left;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: #ccc;
-      text-indent: -999em;
-      margin-right: 5px;
-      cursor: pointer; }
-    .banner .slide .circle ol .active {
-      background-color: red; }
-  .banner .slide ul {
-    left: 0px;
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    display: block; }
-    .banner .slide ul li {
-      float: left;
-      width: 1519px;
-      height: 439px; }
-      .banner .slide ul li a {
-        display: block;
-        width: 1519px;
-        height: 439px;
-        margin: 0 auto; }
-  .banner .slide .arrow {
+.banner {
+  padding-bottom: 140px; }
+  .banner .slide {
     position: relative;
     width: 1519px;
-    height: 500px;
-    color: #fff;
-    font-size: 100px; }
-    .banner .slide .arrow #left {
-      color: #fff;
-      display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    width: auto; }
+    .banner .slide .circle {
       position: absolute;
-      left: 200px;
-      top: 25%; }
-    .banner .slide .arrow #right {
+      left: 48%;
+      bottom: 20px;
+      z-index: 10000; }
+      .banner .slide .circle ol li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #ccc;
+        text-indent: -999em;
+        margin-right: 5px;
+        cursor: pointer; }
+      .banner .slide .circle ol .active {
+        background-color: red; }
+    .banner .slide ul {
+      left: 0px;
+      position: relative;
+      padding: 0px;
+      margin: 0px;
+      display: block; }
+      .banner .slide ul li {
+        float: left;
+        width: 1519px;
+        height: 439px; }
+        .banner .slide ul li a {
+          display: block;
+          width: 1519px;
+          height: 439px;
+          margin: 0 auto; }
+    .banner .slide .arrow {
+      position: relative;
+      width: 1519px;
+      height: 400px;
       color: #fff;
-      position: absolute;
-      right: 200px;
-      top: 25%; }
+      font-size: 100px; }
+      .banner .slide .arrow #left {
+        color: #fff;
+        display: block;
+        position: absolute;
+        left: 200px;
+        top: 25%; }
+      .banner .slide .arrow #right {
+        color: #fff;
+        position: absolute;
+        right: 200px;
+        top: 25%; }
+
+.bannerlist {
+  display: block;
+  width: 1190px;
+  height: 160px;
+  position: absolute;
+  top: 570px;
+  display: flex;
+  justify-content: center; }
+  .bannerlist .list {
+    transition: all 0.2s linear; }
+  .bannerlist .list:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 8px -11px gray; }
+  .bannerlist a img {
+    margin: 0 8px; }
 
 /*# sourceMappingURL=banner.css.map */

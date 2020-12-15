@@ -1,4 +1,5 @@
 .banner{
+    padding-bottom: 140px;
     .slide{
         position: relative;
         width: 1519px;
@@ -6,8 +7,9 @@
         overflow: hidden;
         .circle{
             position: absolute;
-            left: 50%;
-            bottom:0;
+            left: 48%;
+            bottom:20px;
+            z-index: 10000;
             ol{
                 li{
                     float: left;
@@ -50,7 +52,7 @@
         .arrow{
             position: relative;
             width: 1519px;
-            height: 500px;
+            height: 400px;
             color: #fff;
             font-size: 100px;
             #left{
@@ -73,25 +75,24 @@
 
 
 
-// .bannerlist{
-//     display: block;
-//     width: 1190px;
-//     height: 160px;
-//     position: absolute;
-//     top: 570px;
-//     z-index: 120;
-//     display: flex;
-//     justify-content: center;
-//     .list{
-//         transition: all 0.2s linear;
-//     }
-//     .list:hover{
-//         transform:translateY(-2px);
-//         box-shadow:0px 12px 8px -11px gray;
-//     }
-//     a{
-//         img{
-//             margin:0 8px;
-//         }
-//     }
-// }
+.bannerlist{
+    display: block;
+    width: 1190px;
+    height: 160px;
+    position: absolute;
+    top: 570px;
+    display: flex;
+    justify-content: center;
+    .list{
+        transition: all 0.2s linear;
+    }
+    .list:hover{
+        transform:translateY(-2px);
+        box-shadow:0px 12px 8px -11px gray;
+    }
+    a{
+        img{
+            margin:0 8px;
+        }
+    }
+}

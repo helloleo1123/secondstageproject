@@ -102,7 +102,7 @@
     }
 }
 
-.csgoarea{
+.xiaohuarea{
     height: 730px;
     padding-bottom: 20px;
     margin-top: 20px;
@@ -351,41 +351,4 @@
         transition:all 0.3s linear;
     }
 }
-.normalshadow{
-    width: 227px;
-    height: 90px;
-    position: absolute;
-    left: 0;
-    top: 300px;
-    background: url(../images/rgba.png) no-repeat 0 0 ;
-    z-index: 15;
-    opacity: 0;
-    transition:all 0.3s linear;
-    .starts{
-        a{
-           width: 74px;
-            height: 14px;
-            margin: 12px auto;
-            background: url(../images/stars.png) no-repeat 0 0;  
-            display: block;
-        }    
-    }
-    .addin{
-       a{
-        position: absolute;
-        top: 38px;
-        left: 50%;
-        width: 214px;
-        height: 45px;
-        line-height: 45px;
-        margin: 0 auto 0 -108px;
-        border: 1px solid #FFF;
-        font-size: 16px;
-        color: #FFF;
-        display: block;
-       }
-       a:hover{
-           background-color: red;
-       }
-    }
-}
+

@@ -2,9 +2,9 @@ define(['jlazyload'], () => {
     return {
         init: function() {
             //渲染+懒加载
-            const $list = $('.dotaarea .goods .right  .normal ');
+            const $list = $('.xiaohuarea .normal ');
             $.ajax({
-                url: 'http://10.31.161.33/secondstageproject/php/index1.php',
+                url: 'http://10.31.161.33/secondstageproject/php/index2.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';
@@ -17,9 +17,7 @@ define(['jlazyload'], () => {
                         <p class="goodsname">
                             ${value.title}
                         </p>
-                        <p class="goodsprice">
-                            ￥${value.price}
-                        </p>
+                        <p class="goodsprice">￥${value.price}</p>
                         
                     </li>    
                     `;
