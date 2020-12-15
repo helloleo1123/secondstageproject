@@ -10,12 +10,16 @@ a{
     clear: both;
     width:1170px;
     margin:0 auto;
-    text-align: right;
+    text-align: center;
     padding-right:20px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
 .m-style {
-    float: right;
+    
     text-align: center; 
 }
 

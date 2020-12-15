@@ -15,8 +15,7 @@
   height: 25px;
   line-height: 25px;
   padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: aqua; }
+  padding-bottom: 25px; }
   .main .category p {
     width: 42px;
     height: 25px;
@@ -40,13 +39,13 @@
     height: 25px;
     border-left: 1px solid #ddd; }
 .main .goodslist {
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  padding-bottom: 50px; }
 .main .rank {
   height: 20px;
   text-align: right;
   overflow: hidden;
   font-size: 14px;
-  background-color: pink;
   padding: 20px 0; }
   .main .rank a {
     display: inline-block;
@@ -80,31 +79,15 @@
     background: url(../images/base.png) no-repeat -206px 0; }
 .main .goodsdetail {
   width: 1200px;
-  height: 310px;
   padding-top: 75px;
   margin: 0 auto;
   background-color: #fff;
   position: relative; }
   .main .goodsdetail li {
     float: left;
-    width: 285px;
+    width: 300px;
     height: 310px;
     background-color: #fff; }
-  .main .goodsdetail .like {
-    position: absolute;
-    top: 18px;
-    right: 15px;
-    color: #999;
-    font-family: Arial;
-    line-height: 14px; }
-    .main .goodsdetail .like span {
-      display: inline-block;
-      width: 13px;
-      height: 11px;
-      overflow: hidden;
-      margin-right: 5px;
-      background: url(../images/base.png) no-repeat -132px 0;
-      vertical-align: middle; }
   .main .goodsdetail a:nth-child(2) img {
     width: 210px;
     height: 210px;
@@ -117,6 +100,7 @@
     overflow: hidden;
     color: #474747; }
   .main .goodsdetail .goodsprice {
+    display: block;
     font-size: 18px;
     color: #e90404;
     font-family: Arial; }

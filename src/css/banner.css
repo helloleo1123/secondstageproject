@@ -3,23 +3,22 @@
   width: 1519px;
   margin: 0 auto;
   overflow: hidden;
-  height: 500px;
   width: auto; }
   .banner .slide .circle {
     position: absolute;
-    left: 0;
-    bottom: 30px;
-    width: 100%;
-    z-index: 1;
-    text-align: center; }
-    .banner .slide .circle a {
-      display: inline-block;
-      width: 11px;
-      height: 11px;
-      border-radius: 6px;
-      margin: 0 5px;
-      overflow: hidden;
-      background-color: #eff0f2; }
+    left: 50%;
+    bottom: 0; }
+    .banner .slide .circle ol li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #ccc;
+      text-indent: -999em;
+      margin-right: 5px;
+      cursor: pointer; }
+    .banner .slide .circle ol .active {
+      background-color: red; }
   .banner .slide ul {
     left: 0px;
     position: relative;
@@ -35,38 +34,22 @@
         width: 1519px;
         height: 439px;
         margin: 0 auto; }
-
-.arrow .leftarrow {
-  width: 47px;
-  height: 80px;
-  position: relative; }
-  .arrow .leftarrow a span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(../images/base.png);
-    background-position: 0 -20px;
-    position: absolute;
-    top: -260px;
-    left: 170px; }
-  .arrow .leftarrow a span:hover {
-    background-color: #666;
-    opacity: 80%; }
-.arrow .rightarrow {
-  width: 47px;
-  height: 80px;
-  position: relative; }
-  .arrow .rightarrow a span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: url(../images/base.png);
-    background-position: -47px -20px;
-    position: absolute;
-    top: -340px;
-    left: 1286px; }
-  .arrow .rightarrow a span:hover {
-    background-color: #666;
-    opacity: 80%; }
+  .banner .slide .arrow {
+    position: relative;
+    width: 1519px;
+    height: 500px;
+    color: #fff;
+    font-size: 100px; }
+    .banner .slide .arrow #left {
+      color: #fff;
+      display: block;
+      position: absolute;
+      left: 200px;
+      top: 25%; }
+    .banner .slide .arrow #right {
+      color: #fff;
+      position: absolute;
+      right: 200px;
+      top: 25%; }
 
 /*# sourceMappingURL=banner.css.map */

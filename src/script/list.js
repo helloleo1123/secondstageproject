@@ -8,7 +8,7 @@ define(['pagination', 'jlazyload'], function() {
             let $next = []; //li里面的商品的后一个价格
             //1.渲染列表页面
             $.ajax({
-                url: 'http://localhost/secondstageproject/php/list.php',
+                url: 'http://10.31.161.33/secondstageproject/php/list.php',
                 dataType: 'json'
             }).done(function(datalist) {
                 console.log(datalist);
@@ -27,9 +27,9 @@ define(['pagination', 'jlazyload'], function() {
                             <p class="goodsname">
                             ${value.title}
                             </p>
-                            <p class="goodsprice">
+                            <span class="goodsprice">
                             ￥${value.price}
-                            </p>
+                            </span>
                         </li>
                     `;
                 });
@@ -75,9 +75,9 @@ define(['pagination', 'jlazyload'], function() {
                                             <p class="goodsname">
                                             ${value.title}
                                             </p>
-                                            <p class="goodsprice">
+                                            <span class="goodsprice">
                                             ￥${value.price}
-                                            </p>
+                                            </span>
                                         </li>
                                     `;
                             });
@@ -86,7 +86,7 @@ define(['pagination', 'jlazyload'], function() {
                             $("img.lazy").lazyload({ effect: "fadeIn" });
 
                             //将li元素添加到排序前的数组中。
-                            $('.list li').each(function(index, element) { //element:原生的元素对象
+                            $('.goodsdetail li').each(function(index, element) { //element:原生的元素对象
                                 $array_default[index] = $(this); //排序前
                                 $array[index] = $(this); //排序后
                             });
@@ -97,13 +97,13 @@ define(['pagination', 'jlazyload'], function() {
 
 
                 //3.点击按钮进行排序
-                $('button').eq(0).on('click', function() {
+                $('.rank a').eq(0).on('click', function() {
                     //遍历渲染。
                     $.each($array_default, function(index, value) { //value就是li元素
                         $list.append(value);
                     });
                 });
-                $('button').eq(1).on('click', function() {
+                $('.rank a').eq(1).on('click', function() {
                     for (let i = 0; i < $array.length - 1; i++) {
                         for (let j = 0; j < $array.length - i - 1; j++) {
                             $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格
@@ -122,7 +122,7 @@ define(['pagination', 'jlazyload'], function() {
                     });
                 });
 
-                $('.button').eq(2).on('click', function() {
+                $('.rank a').eq(2).on('click', function() {
                     for (let i = 0; i < $array.length - 1; i++) {
                         for (let j = 0; j < $array.length - i - 1; j++) {
                             $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格

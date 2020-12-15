@@ -2,9 +2,9 @@
     const $slide = $('.slide');
     const $ulist = $('.slide ul'); //运动的盒子
     const $piclist = $('.slide ul li'); //3个图片
-    const $btnlist = $('.slide .circle a'); //3个圈圈
-    const $leftarrow = $('.slide .leftarrow ');
-    const $rightarrow = $('.slide  .rightarrow ');
+    const $btnlist = $('.slide .circle ol li'); //3个圈圈
+    const $leftarrow = $('.slide .arrow #left');
+    const $rightarrow = $('.slide .arrow #right');
     let timer = null;
     let $num = 0; //存储索引值
 
@@ -42,7 +42,7 @@
         $num++; 
         if ($num === $btnlist.length + 1) {
             $ulist.css('left', 0);
-            $num = 0;
+            $num = 1;
         }
         //判断左箭头
         if ($num === -1) {

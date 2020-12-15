@@ -22,7 +22,7 @@
         line-height: 25px;
         padding-top: 25px;
         padding-bottom: 25px;
-        background-color: aqua;
+
         p{
             width: 42px;
             height: 25px;
@@ -56,13 +56,14 @@
     }
     .goodslist{
         background-color: #f5f5f5;
+        padding-bottom: 50px;
     }
     .rank{
         height: 20px;
         text-align: right;
         overflow: hidden;
         font-size: 14px;
-        background-color: pink;
+
         padding: 20px 0;
         a{
             display: inline-block;
@@ -112,7 +113,7 @@
     }
     .goodsdetail{
         width: 1200px;
-        height: 310px;
+        // height: 310px;
         padding-top: 75px;
         margin: 0 auto;
         background-color: #fff;
@@ -120,27 +121,11 @@
         // float: left;
         li{
             float: left;
-            width: 285px;
+            width: 300px;
             height: 310px;
             background-color: #fff;
         }
-        .like{
-            position: absolute;
-            top: 18px;
-            right: 15px;
-            color: #999;
-            font-family: Arial;
-            line-height: 14px;
-            span{
-                display: inline-block;
-                width: 13px;
-                height: 11px;
-                overflow: hidden;
-                margin-right: 5px;
-                background: url(../images/base.png) no-repeat -132px 0;
-                vertical-align: middle;
-            }
-        }
+        
         a:nth-child(2){
             img{
                 width: 210px;
@@ -157,6 +142,7 @@
             color: #474747;
         }
         .goodsprice{
+            display: block;
             font-size: 18px;
             color: #e90404;
             font-family: Arial;
