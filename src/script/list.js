@@ -27,9 +27,7 @@ define(['pagination', 'jlazyload'], function() {
                             <p class="goodsname">
                             ${value.title}
                             </p>
-                            <span class="goodsprice">
-                            ￥${value.price}
-                            </span>
+                            <span class="goodsprice">￥${value.price}</span>
                         </li>
                     `;
                 });
@@ -38,7 +36,7 @@ define(['pagination', 'jlazyload'], function() {
                 $("img.lazy").lazyload({ effect: "fadeIn" });
 
                 //将li元素添加到排序前的数组中。
-                $('.list li').each(function(index, element) { //element:原生的元素对象
+                $('.goodsdetail li').each(function(index, element) { //element:原生的元素对象
                     $array_default[index] = $(this); //排序前
                     $array[index] = $(this); //排序后
                 });
@@ -75,9 +73,7 @@ define(['pagination', 'jlazyload'], function() {
                                             <p class="goodsname">
                                             ${value.title}
                                             </p>
-                                            <span class="goodsprice">
-                                            ￥${value.price}
-                                            </span>
+                                            <span class="goodsprice">￥${value.price}</span>
                                         </li>
                                     `;
                             });
@@ -90,7 +86,7 @@ define(['pagination', 'jlazyload'], function() {
                                 $array_default[index] = $(this); //排序前
                                 $array[index] = $(this); //排序后
                             });
-                            console.log($array_default);
+
                         });
                     }
                 });
@@ -106,8 +102,10 @@ define(['pagination', 'jlazyload'], function() {
                 $('.rank a').eq(1).on('click', function() {
                     for (let i = 0; i < $array.length - 1; i++) {
                         for (let j = 0; j < $array.length - i - 1; j++) {
-                            $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格
-                            $next = parseFloat($array[j + 1].find('span').html().substring(1)); //下一个价格
+                            $prev = parseFloat($array[j].find('.goodsprice').html().substring(1)); //上一个价格
+                            $next = parseFloat($array[j + 1].find('.goodsprice').html().substring(1)); //下一个价格
+                            console.log($prev,$next);
+                            
                             if ($prev > $next) {
                                 //通过价格的比较,交换的是里面的这个li元素
                                 let temp = $array[j];
@@ -125,8 +123,8 @@ define(['pagination', 'jlazyload'], function() {
                 $('.rank a').eq(2).on('click', function() {
                     for (let i = 0; i < $array.length - 1; i++) {
                         for (let j = 0; j < $array.length - i - 1; j++) {
-                            $prev = parseFloat($array[j].find('span').html().substring(1)); //上一个价格
-                            $next = parseFloat($array[j + 1].find('span').html().substring(1)); //下一个价格
+                            $prev = parseFloat($array[j].find('.goodsprice').html().substring(1)); //上一个价格
+                            $next = parseFloat($array[j + 1].find('.goodsprice').html().substring(1)); //下一个价格
                             if ($prev < $next) {
                                 //通过价格的比较,交换的是里面的这个li元素
                                 let temp = $array[j];
