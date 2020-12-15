@@ -173,6 +173,7 @@
         .right{
             float: left;
             .righttop{
+                height: 650px;
                 .normal:nth-child(4){
                     margin-right: 0;
                 }
@@ -239,7 +240,6 @@
             margin-left: 15px;
             line-height: 20px;
             color: #666;
-            background-color: yellow;
             float: left;
             .text{
                 height: 81px;
@@ -295,7 +295,6 @@
 .heightbig{
     height: 614px;
     width: 226px;
-    background-color: aqua;
     float: left;
     margin: 0 10px 15px 0;
     transition: all 0.2s linear;
@@ -305,26 +304,32 @@
 }
 
 .normal{
-    width: 227px;
-    height: 253px;
-    padding-top: 47px;
-    background-color: darkorange;
+    width: 950px;
     float: left;
-    margin: 0 14px 15px 0;
     text-align: center;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     transition: all 0.2s linear;
-    a{
-        width: 160px;
-        height: 16px;
-        img{
+    li{
+        margin: 10px 16px 15px 0;
+        float: left;
+        width: 220px;
+        height: 293px;
+        background-color: white;
+        text-align: center;
+        a{
             width: 160px;
-            height: 160px;
-            margin: 0 auto;
+            height: 16px;
+            img{
+                padding-top: 40px;
+                width: 160px;
+                height: 160px;
+                margin: 0 auto;
 
+            }
         }
     }
+    
     .goodsname{
         font-size: 14px;
         margin: 15px 15px 5px 15px;
@@ -336,11 +341,8 @@
         color: #eb0303;
         font-family: Arial;
     }
-    
 }
-.normal:hover{
-    transform: translateY(-2px);
-}
+
 .normal:hover{
     .normalshadow{
         opacity: 1;

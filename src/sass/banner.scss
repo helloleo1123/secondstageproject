@@ -1,6 +1,9 @@
 .banner{
-    position: relative;
     .slide{
+        position: relative;
+        width: 1519px;
+        margin: 0 auto;
+        overflow: hidden;
         .circle{
             position: absolute;
             left: 0;
@@ -22,7 +25,7 @@
         width: auto;
         // background-color: yellow;
         ul{
-            width: 100000px;
+            // width: 100000px;
             left: 0px;
             position: relative;
             // overflow: hidden;

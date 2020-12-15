@@ -1,39 +1,40 @@
-.banner {
-  position: relative; }
-  .banner .slide {
-    height: 500px;
-    width: auto; }
-    .banner .slide .circle {
-      position: absolute;
-      left: 0;
-      bottom: 30px;
-      width: 100%;
-      z-index: 1;
-      text-align: center; }
-      .banner .slide .circle a {
-        display: inline-block;
-        width: 11px;
-        height: 11px;
-        border-radius: 6px;
-        margin: 0 5px;
-        overflow: hidden;
-        background-color: #eff0f2; }
-    .banner .slide ul {
-      width: 100000px;
-      left: 0px;
-      position: relative;
-      padding: 0px;
-      margin: 0px;
-      display: block; }
-      .banner .slide ul li {
-        float: left;
+.banner .slide {
+  position: relative;
+  width: 1519px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 500px;
+  width: auto; }
+  .banner .slide .circle {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    z-index: 1;
+    text-align: center; }
+    .banner .slide .circle a {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      border-radius: 6px;
+      margin: 0 5px;
+      overflow: hidden;
+      background-color: #eff0f2; }
+  .banner .slide ul {
+    left: 0px;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    display: block; }
+    .banner .slide ul li {
+      float: left;
+      width: 1519px;
+      height: 439px; }
+      .banner .slide ul li a {
+        display: block;
         width: 1519px;
-        height: 439px; }
-        .banner .slide ul li a {
-          display: block;
-          width: 1519px;
-          height: 439px;
-          margin: 0 auto; }
+        height: 439px;
+        margin: 0 auto; }
 
 .arrow .leftarrow {
   width: 47px;

@@ -127,8 +127,10 @@
       float: left; }
     .csgoarea .goods .right {
       float: left; }
-      .csgoarea .goods .right .righttop .normal:nth-child(4) {
-        margin-right: 0; }
+      .csgoarea .goods .right .righttop {
+        height: 650px; }
+        .csgoarea .goods .right .righttop .normal:nth-child(4) {
+          margin-right: 0; }
       .csgoarea .goods .right .rightbottom .normal:nth-child(4) {
         margin-right: 0; }
 
@@ -178,7 +180,6 @@
       margin-left: 15px;
       line-height: 20px;
       color: #666;
-      background-color: yellow;
       float: left; }
       .comments .commentbox .right .text {
         height: 81px;
@@ -215,7 +216,6 @@
 .heightbig {
   height: 614px;
   width: 226px;
-  background-color: aqua;
   float: left;
   margin: 0 10px 15px 0;
   transition: all 0.2s linear; }
@@ -224,23 +224,26 @@
   transform: translateY(-2px); }
 
 .normal {
-  width: 227px;
-  height: 253px;
-  padding-top: 47px;
-  background-color: darkorange;
+  width: 950px;
   float: left;
-  margin: 0 14px 15px 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
   transition: all 0.2s linear; }
-  .normal a {
-    width: 160px;
-    height: 16px; }
-    .normal a img {
+  .normal li {
+    margin: 10px 16px 15px 0;
+    float: left;
+    width: 220px;
+    height: 293px;
+    background-color: white;
+    text-align: center; }
+    .normal li a {
       width: 160px;
-      height: 160px;
-      margin: 0 auto; }
+      height: 16px; }
+      .normal li a img {
+        padding-top: 40px;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto; }
   .normal .goodsname {
     font-size: 14px;
     margin: 15px 15px 5px 15px;
@@ -250,9 +253,6 @@
     font-size: 18px;
     color: #eb0303;
     font-family: Arial; }
-
-.normal:hover {
-  transform: translateY(-2px); }
 
 .normal:hover .normalshadow {
   opacity: 1;
