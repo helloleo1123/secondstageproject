@@ -14,7 +14,7 @@
         } else {
             $loutinav.hide();
         }
-        $('title').html($scrolltop);
+        // $('title').html($scrolltop);
         // 第四步：通过触发滚动条，通过楼层将对应的楼梯添加激活的样式。
         // 如果楼层的top值>滚动条的top值,给楼层对应的楼梯添加激活状态。
         $louceng.each(function(index, element) {

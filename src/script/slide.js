@@ -61,7 +61,7 @@
         $ulist.stop(true).animate({
             left: -$liwidth * $num
         });
-        $('title').html($num); //html():相当于原生js里面innerHTML
+        // $('title').html($num); //html():相当于原生js里面innerHTML
     }
 
     //6.自动轮播
