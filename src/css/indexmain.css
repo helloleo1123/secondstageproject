@@ -1,261 +1,372 @@
 .main {
-  margin-top: 20px;
-  background-color: #f5f5f5; }
+    margin-top: 20px;
+    background-color: #f5f5f5;
+}
 
 .dotaarea {
-  height: 730px;
-  padding-bottom: 20px; }
-  .dotaarea .title {
+    height: 730px;
+    padding-bottom: 20px;
+}
+
+.dotaarea .title {
     height: 97px;
-    background-color: pink;
     display: flex;
     align-items: center;
-    position: relative; }
-    .dotaarea .title .titleleft {
-      float: left; }
-      .dotaarea .title .titleleft li {
-        width: 240px;
-        height: 40px;
-        line-height: 40px;
-        background-color: yellow; }
-        .dotaarea .title .titleleft li p {
-          float: left;
-          font-size: 18px;
-          font-weight: bold;
-          margin-left: 10px; }
-        .dotaarea .title .titleleft li img {
-          width: 35px;
-          height: 35px;
-          float: left; }
-    .dotaarea .title .titlemid {
-      width: 150px;
-      height: 34px;
-      line-height: 34px;
-      margin-left: 150px; }
-      .dotaarea .title .titlemid li a {
-        width: 110px;
-        height: 29px;
-        color: red;
-        display: block;
-        border-bottom: 2px solid red;
-        font-size: 15px;
-        font-weight: bold; }
-    .dotaarea .title .titleright {
-      height: 97px;
-      line-height: 97px;
-      width: 70px;
-      position: absolute;
-      right: 0; }
-      .dotaarea .title .titleright li a {
-        font-size: 16px;
-        color: #666; }
-      .dotaarea .title .titleright li span {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        margin-left: 5px;
-        background: url(../images/base.png) no-repeat -90px 0;
-        vertical-align: -5px; }
-      .dotaarea .title .titleright li a:hover {
-        color: red; }
-        .dotaarea .title .titleright li a:hover span {
-          background: url(../images/base.png) no-repeat -111px 0; }
-  .dotaarea .goods {
+    position: relative;
+}
+
+.dotaarea .title .titleleft {
+    float: left;
+}
+
+.dotaarea .title .titleleft li {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.dotaarea .title .titleleft li p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dotaarea .title .titleleft li img {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.dotaarea .title .titlemid {
+    width: 150px;
+    height: 34px;
+    line-height: 34px;
+    margin-left: 150px;
+}
+
+.dotaarea .title .titlemid li a {
+    width: 110px;
+    height: 29px;
+    color: red;
+    display: block;
+    border-bottom: 2px solid red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dotaarea .title .titleright {
+    height: 97px;
+    line-height: 97px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+}
+
+.dotaarea .title .titleright li a {
+    font-size: 16px;
+    color: #666;
+}
+
+.dotaarea .title .titleright li span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    background: url(../images/base.png) no-repeat -90px 0;
+    vertical-align: -5px;
+}
+
+.dotaarea .title .titleright li a:hover {
+    color: red;
+}
+
+.dotaarea .title .titleright li a:hover span {
+    background: url(../images/base.png) no-repeat -111px 0;
+}
+
+.dotaarea .goods {
     width: 100%;
-    background-color: red; }
-    .dotaarea .goods .left {
-      float: left; }
-    .dotaarea .goods .right {
-      float: left; }
-      .dotaarea .goods .right .righttop .normal:nth-child(4) {
-        margin-right: 0; }
-      .dotaarea .goods .right .rightbottom .normal:nth-child(4) {
-        margin-right: 0; }
+    background-color: red;
+}
+
+.dotaarea .goods .left {
+    float: left;
+}
+
+.dotaarea .goods .right {
+    float: left;
+}
+
+.dotaarea .goods .right .righttop .normal:nth-child(4) {
+    margin-right: 0;
+}
+
+.dotaarea .goods .right .rightbottom .normal:nth-child(4) {
+    margin-right: 0;
+}
 
 .xiaohuarea {
-  height: 730px;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .xiaohuarea .title {
+    height: 730px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.xiaohuarea .title {
     width: 100%;
     height: 97px;
-    background-color: pink;
     display: flex;
     align-items: center;
-    position: relative; }
-    .xiaohuarea .title .titleleft {
-      float: left; }
-      .xiaohuarea .title .titleleft li {
-        width: 240px;
-        height: 40px;
-        line-height: 40px;
-        background-color: yellow; }
-        .xiaohuarea .title .titleleft li p {
-          float: left;
-          font-size: 18px;
-          font-weight: bold;
-          margin-left: 10px; }
-        .xiaohuarea .title .titleleft li img {
-          width: 35px;
-          height: 35px;
-          float: left; }
-    .xiaohuarea .title .titleright {
-      height: 97px;
-      line-height: 97px;
-      width: 70px;
-      position: absolute;
-      right: 0; }
-      .xiaohuarea .title .titleright li a {
-        font-size: 16px;
-        color: #666; }
-      .xiaohuarea .title .titleright li span {
-        width: 20px;
-        height: 20px;
-        display: inline-block;
-        margin-left: 5px;
-        background: url(../images/base.png) no-repeat -90px 0;
-        vertical-align: -5px; }
-      .xiaohuarea .title .titleright li a:hover {
-        color: red; }
-        .xiaohuarea .title .titleright li a:hover span {
-          background: url(../images/base.png) no-repeat -111px 0; }
-  .xiaohuarea .goods {
+    position: relative;
+}
+
+.xiaohuarea .title .titleleft {
+    float: left;
+}
+
+.xiaohuarea .title .titleleft li {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.xiaohuarea .title .titleleft li p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.xiaohuarea .title .titleleft li img {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.xiaohuarea .title .titleright {
+    height: 97px;
+    line-height: 97px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+}
+
+.xiaohuarea .title .titleright li a {
+    font-size: 16px;
+    color: #666;
+}
+
+.xiaohuarea .title .titleright li span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    background: url(../images/base.png) no-repeat -90px 0;
+    vertical-align: -5px;
+}
+
+.xiaohuarea .title .titleright li a:hover {
+    color: red;
+}
+
+.xiaohuarea .title .titleright li a:hover span {
+    background: url(../images/base.png) no-repeat -111px 0;
+}
+
+.xiaohuarea .goods {
     width: 100%;
-    background-color: red; }
-    .xiaohuarea .goods .left {
-      float: left; }
-    .xiaohuarea .goods .right {
-      float: left; }
-      .xiaohuarea .goods .right .righttop {
-        height: 650px; }
-        .xiaohuarea .goods .right .righttop .normal:nth-child(4) {
-          margin-right: 0; }
-      .xiaohuarea .goods .right .rightbottom .normal:nth-child(4) {
-        margin-right: 0; }
+    background-color: red;
+}
+
+.xiaohuarea .goods .left {
+    float: left;
+}
+
+.xiaohuarea .goods .right {
+    float: left;
+}
+
+.xiaohuarea .goods .right .righttop {
+    height: 650px;
+}
+
+.xiaohuarea .goods .right .righttop .normal:nth-child(4) {
+    margin-right: 0;
+}
+
+.xiaohuarea .goods .right .rightbottom .normal:nth-child(4) {
+    margin-right: 0;
+}
 
 .comments {
-  height: 475px;
-  padding-bottom: 30px; }
-  .comments .title {
+    height: 475px;
+    padding-bottom: 30px;
+}
+
+.comments .title {
     width: 100%;
     height: 97px;
     display: flex;
     align-items: center;
-    position: relative; }
-    .comments .title .titleleft {
-      float: left; }
-      .comments .title .titleleft li {
-        width: 240px;
-        height: 40px;
-        line-height: 40px; }
-        .comments .title .titleleft li p {
-          float: left;
-          font-size: 18px;
-          font-weight: bold;
-          margin-left: 10px; }
-        .comments .title .titleleft li img {
-          width: 35px;
-          height: 35px;
-          float: left; }
-  .comments .commentbox {
+    position: relative;
+}
+
+.comments .title .titleleft {
+    float: left;
+}
+
+.comments .title .titleleft li {
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.comments .title .titleleft li p {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.comments .title .titleleft li img {
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+.comments .commentbox {
     width: 386px;
     height: 176px;
-    background-color: aqua;
     float: left;
     text-align: left;
     margin-right: 16px;
     transition: all 0.2s linear;
     display: flex;
     justify-content: center;
-    align-items: center; }
-    .comments .commentbox img {
-      width: 130px;
-      height: 130px;
-      float: left; }
-    .comments .commentbox .right {
-      width: 184px;
-      margin-left: 15px;
-      line-height: 20px;
-      color: #666;
-      float: left; }
-      .comments .commentbox .right .text {
-        height: 81px;
-        line-height: 20px;
-        color: #666;
-        background-color: red; }
-      .comments .commentbox .right .from {
-        color: #999;
-        font-size: 12px;
-        line-height: 20px; }
-        .comments .commentbox .right .from span {
-          display: inline-block;
-          width: 14px;
-          height: 12px;
-          margin-right: 5px;
-          background: url(../images/base.png) no-repeat -174px 0;
-          vertical-align: -1px; }
-      .comments .commentbox .right .price {
-        font-size: 14px;
-        height: 20px;
-        overflow: hidden; }
-        .comments .commentbox .right .price span {
-          color: #ea0406;
-          padding-left: 6px;
-          margin-left: 6px;
-          font-family: Arial;
-          border-left: 1px solid #DDD; }
-  .comments .commentbox3, .comments .commentbox6 {
-    margin-right: 0; }
-  .comments .commentbox:hover {
+    align-items: center;
+    background-color: #fff;
+}
+
+.comments .commentbox img {
+    width: 130px;
+    height: 130px;
+    float: left;
+}
+
+.comments .commentbox .right {
+    width: 184px;
+    margin-left: 15px;
+    line-height: 20px;
+    color: #666;
+    float: left;
+}
+
+.comments .commentbox .right .text {
+    height: 81px;
+    line-height: 20px;
+    color: #666;
+}
+
+.comments .commentbox .right .from {
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.comments .commentbox .right .from span {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    margin-right: 5px;
+    background: url(../images/base.png) no-repeat -174px 0;
+    vertical-align: -1px;
+}
+
+.comments .commentbox .right .price {
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.comments .commentbox .right .price span {
+    color: #ea0406;
+    padding-left: 6px;
+    margin-left: 6px;
+    font-family: Arial;
+    border-left: 1px solid #DDD;
+}
+
+.comments .commentbox3,
+.comments .commentbox6 {
+    margin-right: 0;
+}
+
+.comments .commentbox:hover {
     transform: translateY(-1px);
-    box-shadow: 0px 12px 8px -11px gray; }
+    box-shadow: 0px 12px 8px -11px gray;
+}
 
 .heightbig {
-  height: 614px;
-  width: 226px;
-  float: left;
-  margin: 0 10px 15px 0;
-  transition: all 0.2s linear; }
+    height: 614px;
+    width: 226px;
+    float: left;
+    margin: 0 10px 15px 0;
+    transition: all 0.2s linear;
+}
 
 .heightbig:hover {
-  transform: translateY(-2px); }
+    transform: translateY(-2px);
+}
 
 .normal {
-  width: 950px;
-  float: left;
-  text-align: center;
-  position: relative;
-  transition: all 0.2s linear; }
-  .normal li {
+    width: 950px;
+    float: left;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s linear;
+}
+
+.normal li {
     margin: 10px 16px 15px 0;
     float: left;
     width: 220px;
     height: 293px;
     background-color: white;
-    text-align: center; }
-    .normal li a {
-      width: 160px;
-      height: 16px; }
-      .normal li a img {
-        padding-top: 40px;
-        width: 160px;
-        height: 160px;
-        margin: 0 auto; }
-  .normal .goodsname {
+    text-align: center;
+}
+
+.normal li a {
+    width: 160px;
+    height: 16px;
+}
+
+.normal li a img {
+    padding-top: 40px;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.normal .goodsname {
     font-size: 14px;
     margin: 15px 15px 5px 15px;
     max-height: 38px;
-    overflow: hidden; }
-  .normal .goodsprice {
+    overflow: hidden;
+}
+
+.normal .goodsprice {
     font-size: 18px;
     color: #eb0303;
-    font-family: Arial; }
+    font-family: Arial;
+}
 
 .normal:hover .normalshadow {
-  opacity: 1;
-  position: absolute;
-  top: 210px;
-  transition: all 0.3s linear; }
+    opacity: 1;
+    position: absolute;
+    top: 210px;
+    transition: all 0.3s linear;
+}
+
 
 /*# sourceMappingURL=indexmain.css.map */

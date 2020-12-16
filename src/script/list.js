@@ -17,11 +17,11 @@ define(['pagination', 'jlazyload'], function() {
                 $.each(data, function(index, value) {
                     $strhtml += `
                         <li>
-                            <a href="detail.html?sid=${value.sid}" class="like">
+                            <a href="" class="like">
                                 <span></span>
                                 <font></font>
                             </a>
-                            <a href="">
+                            <a href="detail.html?sid=${value.sid}">
                                 <img class="lazy" data-original="${value.url}">
                             </a>
                             <p class="goodsname">

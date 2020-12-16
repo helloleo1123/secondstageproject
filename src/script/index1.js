@@ -11,7 +11,7 @@ define(['jlazyload'], () => {
                 $.each(data, function(index, value) {
                     $strhtml += `
                     <li>
-                        <a href="detail.html?sid=${value.sid}">
+                        <a href="list.html">
                             <img class="lazy" data-original="${value.url}" style="width:160px;height:160px" alt="">
                         </a>
                         <p class="goodsname">
@@ -42,7 +42,7 @@ define(['jlazyload'], () => {
                 $.each(data, function(index, value) {
                     $strhtml += `
                     <li>
-                        <a href="detail.html?sid=${value.sid}">
+                        <a href="list.html">
                             <img class="lazy" data-original="${value.url}" style="width:160px;height:160px"alt="">
                         </a>
                         <p class="goodsname">
