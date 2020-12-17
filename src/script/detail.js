@@ -18,7 +18,7 @@ define(['jcookie'], () => {
             }).done(function(data) {
                 //获取数据，将数据放入对应的结构中。
                 $('#smallpic').attr('src', data.url);
-                $('.loadtitle').html(data.title); 
+                $('.loadtitle').html(data.title);
                 $('.describe').html(data.describe);
                 $('.loadpcp').html(data.price);
                 $('#bpic').attr('src', data.url);
@@ -43,8 +43,6 @@ define(['jcookie'], () => {
             const $right = $('#right'); //右箭头
             const $list = $('#list'); //小图列表
             //$spic 小图   $bpic 大图  
-
-           
 
             //小放/大放=小图/大图
             $sf.width($spic.width() * $bf.width() / $bpic.width());
@@ -83,13 +81,6 @@ define(['jcookie'], () => {
                 $sf.css('visibility', 'hidden');
                 $bf.css('visibility', 'hidden');
             });
-            //小图切换
-            $('#list ul').on('click', 'li', function() {
-                //$(this):当前操作的li
-                let $imgurl = $(this).find('img').attr('src');
-                $smallpic.attr('src', $imgurl);
-                $bpic.attr('src', $imgurl);
-            });
 
             //小图切换 - 小图是渲染出来的，找不到li。
             $('#list').on('click', 'li', function() { //事件委托,ul元素没有高度不可见，委托#list
@@ -97,16 +88,20 @@ define(['jcookie'], () => {
                 $('#smallpic').attr('src', imgurl);
                 $('#bpic').attr('src', imgurl);
             });
+
+
             //左右箭头事件
-            let $num = 6; //列表显示的图片个数
+            let $num = 6; //列表显示的图片个数,重要的信息
             $right.on('click', function() {
                 let $lists = $('#list ul li');
-                if ($lists.size() > $num) { //限制点击的条件
+                if ($lists.size() > $num) { //限制点击的条件，如果$num值小于li的长度，继续点击右键头
                     $num++;
                     $left.css('color', '#333');
                     if ($lists.size() == $num) {
                         $right.css('color', '#fff');
                     }
+
+                    //列表运动
                     $('#list ul').animate({
                         left: -($num - 6) * $lists.eq(0).outerWidth(true)
                     });
@@ -118,7 +113,7 @@ define(['jcookie'], () => {
                     $num--;
                     $right.css('color', '#333');
                     if ($num <= 6) {
-                        $left.css('color', '#333');
+                        $left.css('color', '#fff');
                     }
                     $('#list ul').animate({
                         left: -($num - 6) * $lists.eq(0).outerWidth(true)
@@ -145,6 +140,9 @@ define(['jcookie'], () => {
                 if ($.cookie('cookiesid') && $.cookie('cookienum')) {
                     arrsid = $.cookie('cookiesid').split(',');
                     arrnum = $.cookie('cookienum').split(',');
+                }else{
+                    arrsid = [];
+                    arrnum = [];
                 }
             }
             //上面的函数获取cookie值，并且转换成数组，方便判断是否是第一次。
@@ -165,7 +163,8 @@ define(['jcookie'], () => {
                     arrnum[$index] = parseInt(arrnum[$index]) + parseInt($('#count').val()); //重新赋值
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('已加入购物车');
+                alert('按钮被点击了');
+                location.reload();
             });
         }
     }
