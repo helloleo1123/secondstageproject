@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             //渲染+懒加载
             const $list = $('.dotaarea .goods .right  .normal1 ');
             $.ajax({
-                url: 'http://10.31.161.33/secondstageproject/php/index1.php',
+                url: 'http://10.31.161.33/secondstageproject/php/index.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';

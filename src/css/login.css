@@ -1,0 +1,85 @@
+.main{
+    background-color: #f5f5f5;
+    padding-bottom: 50px;
+}
+.head{
+    height: 100px;
+    background-color: #f5f5f5;
+
+}
+.head img{
+    padding-top: 40px;
+    margin-left: 200px;
+    width: 150px;
+    height:auto;
+}
+.loginbox{
+    width: 850px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+.tit{
+    color: #333333;
+    line-height: 36px;
+    font-size: 34px;
+    text-shadow: none;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+form p{
+    border: 1px solid #999;
+    margin-bottom: 17px;
+    padding: 0 24px 0 10px;
+    position: relative;
+}
+form input{
+    margin: 0 auto;
+    width: 360px;
+    height: 19.2px;
+    padding: 7px 0;
+    font-size: 14px;
+    color: #666;
+    vertical-align: top;
+    line-height: normal;
+}
+form span{
+    position: absolute;
+    width: 200px;
+    top: 9px;
+    left: 400px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Arial", "Simsun";
+    height: 19px;
+    text-align: left;
+}
+.login{
+    width: auto;
+    height: auto;
+   border: 0;
+   display: inline;
+}
+#login{
+    border: 1px solid #999;
+    margin: 0 auto;
+    height: 35px;
+    width: 70px;
+    color: red;
+    float:left;
+    margin-left: 120px;
+}
+.submit{
+    display: block;
+    border: 1px solid #999;
+    margin: 0 auto;
+    height: 33px;
+    line-height: 33px;
+    width: 70px;
+    color: red;
+    margin: 0 auto;
+    float: left;
+    margin-left: 100px;
+}

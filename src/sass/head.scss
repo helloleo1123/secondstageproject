@@ -505,8 +505,7 @@
         }
     }
     .search{
-        form{
-        }
+        float: left;
         .text{
             float: left;
             width: 263px;
@@ -525,9 +524,7 @@
             border: 0;
             background: #e32332 url(../images/search.png) no-repeat center;
             cursor: pointer;
-            position: absolute;
-            right: 185px;
-            top: 68px;
+            margin-top: 35px;
         }
     }
 }
